@@ -1,7 +1,7 @@
 import discord
 import asyncio
 import random
-
+import os
 
 client = discord.Client()
 
@@ -241,5 +241,5 @@ async def on_message(message):
     if message.content.startswith('#경고도움말'):
         await client.send_message(message.channel, "아직 미완성 구역입니다.대단히죄송합니다.ㅠ.ㅠ")
 
-
-client.run('NTIzMTc1NTQ1MzM3MjgyNTcx.D3J7ww.jgvTwcNNg00XxPagQyJYpUwSvDg')
+access_token = os.environ["Bot_TOKEN"]
+client.run(access_token')
