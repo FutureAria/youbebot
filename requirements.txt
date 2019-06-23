@@ -1,3 +1,2 @@
 discord.py == 0.16.12
-import random == 0.16.12
-import asyncio == 0.16.12
+유배봇.py == 0.16.12
