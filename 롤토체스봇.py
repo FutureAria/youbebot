@@ -1,5 +1,5 @@
 import discord
-
+import os
 
 client = discord.Client()
 
@@ -225,11 +225,6 @@ async def on_message(message):
         await client.send_message(message.channel, "```아군 요들족은 일정 확률로 공격 회피 ```")
     if message.content.startswith('!요들 능력'):
         await client.send_message(message.channel, "```(3) 20% 확률로 회피 (6) 50% 확률로 회피```")
-
-
-
-
-client.run('NTk1OTMwNzY0MDMwMjQ2OTQx.XRyQPQ.huXEHEYWl5IAyiPLcjiRtYlVwjw')
 
 
 access_token = os.environ["Bot_TOKEN"]
